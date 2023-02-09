@@ -6,7 +6,7 @@ current_script_path=${BASH_SOURCE[0]}
 plugin_dir=$(dirname "$(dirname "$current_script_path")")
 
 #echo ${plugin_dir}
-source ${plugin_dir}/lib/utils.bash
+source "${plugin_dir}/lib/utils.bash"
 
 fail() {
   echo -e "\e[31mFail:\e[m $*"
@@ -30,24 +30,23 @@ install_hashlink() {
     fail "asdf-hashlink supports release installs only"
   fi
 
-  local architecture
+  # local architecture
 
-  case "$(uname -m)" in
-  x86_64 | x86-64 | x64 | amd64) architecture="64" ;;
-  *) fail "Unsupported architecture" ;;
-  esac
+  # case "$(uname -m)" in
+  # x86_64 | x86-64 | x64 | amd64) architecture="64" ;;
+  # *) fail "Unsupported architecture" ;;
+  # esac
 
-  case "$OSTYPE" in
-  darwin*) platform="osx" ;;
-  linux*) platform="linux${architecture}" ;;
-  *) fail "Unsupported platform" ;;
-  esac
-  echo ${install_path}
-  local release_file="$ASDF_DOWNLOAD_PATH/$TOOL_NAME-$ASDF_INSTALL_VERSION.tar.gz"
+  # case "$OSTYPE" in
+  # darwin*) platform="osx" ;;
+  # linux*) platform="linux${architecture}" ;;
+  # *) fail "Unsupported platform" ;;
+  # esac
+  echo "${install_path}"
+  #local release_file="$ASDF_DOWNLOAD_PATH/$TOOL_NAME-$ASDF_INSTALL_VERSION.tar.gz"
   local build_dir="$ASDF_DOWNLOAD_PATH"
-  local source_path="${release_file}"
   (
-    cd ${build_dir}
+    cd "${build_dir}"
     export PREFIX=$ASDF_DATA_DIR/installs/hashlink/${version}
     make
     make install
