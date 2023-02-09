@@ -50,7 +50,7 @@ install_hashlink() {
     cd ${build_dir}
     export PREFIX=$ASDF_DATA_DIR/installs/hashlink/${version}
     make
-    make install_hashlink
+    make install
     rm -rf "$build_dir"
   ) || (
     rm -rf "$build_dir"
