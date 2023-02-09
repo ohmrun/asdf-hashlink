@@ -14,6 +14,7 @@ fail() {
 
 curl_opts=(-fsSL)
 
+
 # NOTE: You might want to remove this if hashlink is not hosted on GitHub releases.
 if [ -n "${GITHUB_API_TOKEN:-}" ]; then
   curl_opts=("${curl_opts[@]}" -H "Authorization: token $GITHUB_API_TOKEN")
@@ -42,7 +43,7 @@ download_release() {
   filename="$2"
 
   # TODO: Adapt the release URL convention for hashlink
-  url="$GH_REPO/archive/v${version}.tar.gz"
+  url="$GH_REPO/archive/${version}.tar.gz"
 
   echo "* Downloading $TOOL_NAME release $version..."
   curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"

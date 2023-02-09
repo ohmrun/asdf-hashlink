@@ -2,3 +2,4 @@
 
 exec shellcheck -s bash -x \
   bin/* -P lib/
+list
