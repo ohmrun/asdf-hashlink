@@ -29,7 +29,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - name: install dependencies
-        run: brew bundle
+        run:  curl https://raw.githubusercontent.com/HaxeFoundation/hashlink/master/Brewfile | brew bundle --file=/dev/stdin
       - uses: asdf-vm/actions/plugin-test@v1
         with:
           command: hl --version
