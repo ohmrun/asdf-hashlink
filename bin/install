@@ -49,7 +49,7 @@ install_hashlink() {
   (
     echo "∗ Downloading Hashlink source..."
 
-    ${plugin_dir}/bin/download;
+    #${plugin_dir}/bin/download;
 
     # echo ${build_dir}
     # #cd hashlink-${version}
