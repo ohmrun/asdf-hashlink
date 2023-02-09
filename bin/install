@@ -48,8 +48,9 @@ install_hashlink() {
   local source_path="${release_file}"
   (
     cd ${build_dir}
+    export PREFIX=$ASDF_DATA_DIR/installs/hashlink/${version}
     make
-    make install prefix=$ASDF_DATA_DIR/installs/hashlink/${version}
+    make install_hashlink
     rm -rf "$build_dir"
   ) || (
     rm -rf "$build_dir"
