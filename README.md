@@ -5,6 +5,8 @@
 [Hashlink](https://hashlink.haxe.org/) compiles to a runtime and c. It is fast, strongly typed and backed by the [Haxe](haxe.org/) language, which itself compiles to currently 12 platforms (see [here](https://haxe.org/documentation/introduction/compiler-targets.html)
 
 
+### NB (working on macos at present)
+
 ## Install
 
 Requires [asdf](asdf-vm.com/)
