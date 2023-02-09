@@ -47,26 +47,13 @@ install_hashlink() {
   local build_dir="$ASDF_DOWNLOAD_PATH"
   local source_path="${release_file}"
   (
-    echo "∗ Downloading Hashlink source..."
-
-    #${plugin_dir}/bin/download;
-
-    # echo ${build_dir}
-    # #cd hashlink-${version}
-    # mkdir -p "${build_dir}"
-    # tar -zxf "$source_path" -C "${build_dir}" --strip-components=1
     cd ${build_dir}
     make
     PREFIX=$ASDF_DATA_DIR/installs/hashlink/${version}
-    echo $PREFIX
+    export $PREFIX
     make install
-
-    rm -rf "$source_path"
     rm -rf "$build_dir"
-
-    # echo "The installation was successful!"
   ) || (
-    rm -rf "$source_path"
     rm -rf "$build_dir"
     fail "An error occurred"
   )
