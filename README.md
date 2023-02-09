@@ -1,4 +1,4 @@
-# asdf-hashlink [![Build](https://github.com/0b1kn00b/asdf-hashlink/actions/workflows/build.yml/badge.svg)](https://github.com/0b1kn00b/asdf-hashlink/actions/workflows/build.yml) [![Lint](https://github.com/0b1kn00b/asdf-hashlink/actions/workflows/lint.yml/badge.svg)](https://github.com/0b1kn00b/asdf-hashlink/actions/workflows/lint.yml)
+# asdf-hashlink [![Build](https://github.com/ohmrun/asdf-hashlink/actions/workflows/build.yml/badge.svg)](https://github.com/ohmrun/asdf-hashlink/actions/workflows/build.yml) [![Lint](https://github.com/ohmrun/asdf-hashlink/actions/workflows/lint.yml/badge.svg)](https://github.com/ohmrun/asdf-hashlink/actions/workflows/lint.yml)
 
 [hashlink](https://github.com/ohmrun/asdf-hashlink) plugin for the [asdf version manager](https://asdf-vm.com).
 
