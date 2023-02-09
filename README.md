@@ -1,61 +1,21 @@
-<div align="center">
+# asdf-hashLink
 
-# asdf-hashlink [![Build](https://github.com/0b1kn00b/asdf-hashlink/actions/workflows/build.yml/badge.svg)](https://github.com/0b1kn00b/asdf-hashlink/actions/workflows/build.yml) [![Lint](https://github.com/0b1kn00b/asdf-hashlink/actions/workflows/lint.yml/badge.svg)](https://github.com/0b1kn00b/asdf-hashlink/actions/workflows/lint.yml)
+[Hashlink](https://hashlink.haxe.org/) compiles to a runtime and c. It is fast, strongly typed and backed by the [Haxe](haxe.org/) language, which itself compiles to currently 12 platforms (see [here](https://haxe.org/documentation/introduction/compiler-targets.html)
 
 
-[hashlink](https://github.com/ohmrun/asdf-hashlink) plugin for the [asdf version manager](https://asdf-vm.com).
+## Install
 
-</div>
+Requires [asdf](asdf-vm.com/)
 
-# Contents
-
-- [Dependencies](#dependencies)
-- [Install](#install)
-- [Contributing](#contributing)
-- [License](#license)
-
-# Dependencies
-
-**TODO: adapt this section**
-
-- `bash`, `curl`, `tar`: generic POSIX utilities.
-- `SOME_ENV_VAR`: set this environment variable in your shell config to load the correct version of tool x.
-
-# Install
-
-Plugin:
-
-```shell
-asdf plugin add hashlink
-# or
-asdf plugin add hashlink https://github.com/0b1kn00b/asdf-hashlink.git
+```bash
+asdf plugin add hashlink http://www.github.com/ohmrun/asdf-hashlink
+asdf global hashlink 1.13
 ```
 
-hashlink:
 
-```shell
-# Show all installable versions
-asdf list-all hashlink
+## Queries
+@ohmrun@mastodon.social
+## Thanks
 
-# Install specific version
-asdf install hashlink latest
-
-# Set a version globally (on your ~/.tool-versions file)
-asdf global hashlink latest
-
-# Now hashlink commands are available
-hashlik --version
-```
-
-Check [asdf](https://github.com/asdf-vm/asdf) readme for more instructions on how to
-install & manage versions.
-
-# Contributing
-
-Contributions of any kind welcome! See the [contributing guide](contributing.md).
-
-[Thanks goes to these contributors](https://github.com/0b1kn00b/asdf-hashlink/graphs/contributors)!
-
-# License
-
-See [LICENSE](LICENSE) © [0b1kn00b](https://github.com/0b1kn00b/)
+[smorimoto](https://github.com/smorimoto) for the original [asdf-haxe](https://github.com/asdf-community/asdf-haxe) plugin
+`
