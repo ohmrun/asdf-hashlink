@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-echo $(pwd)
+echo $(plugin_dir)
 source bin/utils.bash
 
 fail() {
