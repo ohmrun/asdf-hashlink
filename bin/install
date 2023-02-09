@@ -2,6 +2,7 @@
 
 set -euo pipefail
 
+plugin_dir=$(dirname "$(dirname "$current_script_path")")
 echo ${plugin_dir}
 source bin/utils.bash
 
