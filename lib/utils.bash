@@ -3,7 +3,7 @@
 set -euo pipefail
 
 # TODO: Ensure this is the correct GitHub homepage where releases can be downloaded for hashlink.
-GH_REPO="https://github.com/ohmrun/asdf-hashlink"
+GH_REPO="https://github.com/HaxeFoundation/hashlink"
 TOOL_NAME="hashlink"
 TOOL_TEST="hashlik --version"
 
