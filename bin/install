@@ -42,7 +42,6 @@ install_hashlink() {
   linux*) platform="linux${architecture}" ;;
   *) fail "Unsupported platform" ;;
   esac
-  echo ${release_file}
   echo ${install_path}
   local release_file="$ASDF_DOWNLOAD_PATH/$TOOL_NAME-$ASDF_INSTALL_VERSION.tar.gz"
   local build_dir="$ASDF_DOWNLOAD_PATH"
