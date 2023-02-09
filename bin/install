@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
+source utils.bash
+
 fail() {
   echo -e "\e[31mFail:\e[m $*"
   exit 1
@@ -42,7 +44,7 @@ install_hashlink() {
   local source_path="${release_file}"
   (
     echo "∗ Downloading Hashlink source..."
-    source utils.bashHaxeFoundation/hashlink/archive/
+
     download;
 
     # echo ${build_dir}
