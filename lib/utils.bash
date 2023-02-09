@@ -4,8 +4,8 @@ set -euo pipefail
 
 # TODO: Ensure this is the correct GitHub homepage where releases can be downloaded for hashlink.
 GH_REPO="https://github.com/HaxeFoundation/hashlink"
-TOOL_NAME="hashlink"
-TOOL_TEST="hashlik --version"
+TOOL_NAME="hl"
+TOOL_TEST="hl --version"
 
 fail() {
   echo -e "asdf-$TOOL_NAME: $*"
