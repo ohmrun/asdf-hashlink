@@ -42,6 +42,7 @@ install_hashlink() {
   local source_path="${release_file}"
   (
     echo "∗ Downloading Hashlink source..."
+    source utils.bashHaxeFoundation/hashlink/archive/
     download;
 
     # echo ${build_dir}
