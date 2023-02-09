@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-
+  
 set -euo pipefail
 
-source utils.bash
+source bin/utils.bash
 
 fail() {
   echo -e "\e[31mFail:\e[m $*"
