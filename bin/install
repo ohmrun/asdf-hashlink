@@ -43,9 +43,9 @@ install_hashlink() {
   *) fail "Unsupported platform" ;;
   esac
 
-  if ["${OSTYPE}" eq "osx"] then;
-    export DYLD_FALLBACK_LIBRARY_PATH="${install_path}/lib":$DYLD_FALLBACK_LIBRARY_PATH:
-  fi
+  # if ["${OSTYPE}" eq "osx"] then;
+  #   export DYLD_FALLBACK_LIBRARY_PATH="${install_path}/lib":$DYLD_FALLBACK_LIBRARY_PATH:
+  # fi
 
   echo "${install_path}"
   #local release_file="$ASDF_DOWNLOAD_PATH/$TOOL_NAME-$ASDF_INSTALL_VERSION.tar.gz"
